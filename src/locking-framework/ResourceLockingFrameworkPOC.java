@@ -132,14 +132,14 @@ public class ResourceLockingFrameworkPOC implements Runnable {
 
         Thread thread2 =
                 new Thread(
-                        new ResourceLockingFrameworkPOC("Update Recovery System Policy Workflow"));
+                        new ResourceLockingFrameworkPOC("Update Workflow"));
 
         Thread thread3 =
-                new Thread(new ResourceLockingFrameworkPOC("Delete Recovery System Workflow"));
+                new Thread(new ResourceLockingFrameworkPOC("Delete Workflow"));
 
-        Thread thread4 = new Thread(new ResourceLockingFrameworkPOC("Sync Workflow"));
+        Thread thread4 = new Thread(new ResourceLockingFrameworkPOC("Patch Workflow"));
 
-        Thread thread5 = new Thread(new ResourceLockingFrameworkPOC("Workflow"));
+        Thread thread5 = new Thread(new ResourceLockingFrameworkPOC("Wow Workflow"));
 
         List<Thread> threads = new ArrayList<>();
         threads.add(thread1);
